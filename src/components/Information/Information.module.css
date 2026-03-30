@@ -1,0 +1,25 @@
+.info {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #6a1b9a;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #555;
+}

@@ -1,0 +1,106 @@
+.monuments {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.monuments h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #6a1b9a;
+  text-align: center;
+}
+
+.sortButtons {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sortButtons button {
+  background-color: #e9ecef;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.sortButtons button.active {
+  background-color: #7b1fa2;
+  color: white;
+}
+
+.sortButtons button:hover {
+  background-color: #9c27b0;
+  color: white;
+}
+
+.monumentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.monumentCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.monumentCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.monumentName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.monumentYear {
+  color: #7b1fa2;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.monumentDescription {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .monuments {
+    padding: 2rem 1rem;
+  }
+  
+  .monumentsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sortButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .sortButtons button {
+    margin: 0;
+    width: 100%;
+  }
+}
