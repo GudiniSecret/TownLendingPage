@@ -1,4 +1,3 @@
-import React from 'react';
 import { cityData } from './data/data';
 import Header from './components/Header/Header';
 import Information from './components/Information/Information';
